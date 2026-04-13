@@ -1,9 +1,3 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
@@ -11,3 +5,8 @@
 @import url('./animations.css');
 
 /* Sections style */
+@import url('./logo.css');
+@import url('./main-section.css');
+@import url('./mobile-modal.css');
+@import url('./register-counter.css');
+@import url('./register-form.css');

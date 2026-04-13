@@ -1,4 +1,6 @@
 .logo-icon {
   width: 100px;
   height: 30px;
+
+  fill: var(--main-text-color);
 }
