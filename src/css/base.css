@@ -39,6 +39,8 @@ body {
 button {
   border: none;
   padding: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .js-is-modal-open.modal-wrapper {

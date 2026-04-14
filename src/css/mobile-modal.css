@@ -7,6 +7,9 @@
   background-color: var(--white-text-color);
   overflow-y: auto;
 }
+.modal__wrapper {
+  height: 100%;
+}
 .modal__header {
   padding-top: 28px;
   padding-bottom: 28px;
@@ -28,6 +31,10 @@
 .modal__content {
   padding-top: 29px;
   padding-bottom: 117px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 88px);
 }
 .modal__title-wrapper {
   margin-bottom: 24px;
