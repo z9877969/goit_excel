@@ -16,8 +16,6 @@
   line-height: 1.5;
 
   color: var(--main-text-color);
-
-  text-indent: -17px;
 }
 .form__field::placeholder {
   color: var(--placeholder-color);
