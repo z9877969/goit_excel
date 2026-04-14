@@ -1,1 +1,46 @@
-/* counter styles */
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timer__table {
+  display: flex;
+  column-gap: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--main-text-color);
+}
+.timer__days,
+.timer__hours,
+.timer__minutes,
+.timer__seconds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2px;
+}
+.timer__seconds .timer__digits {
+  color: var(--main-green-color);
+}
+.timer__dots {
+  color: #01010133;
+}
+.timer__descr {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 1440px) {
+  .timer__table {
+    font-size: 32px;
+    line-height: 1.12;
+  }
+  .timer__days,
+  .timer__hours,
+  .timer__minutes,
+  .timer__seconds {
+    row-gap: 0;
+  }
+}

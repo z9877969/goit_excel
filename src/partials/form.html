@@ -1,10 +1,45 @@
 <form class="form">
-    <input class="form__field" type="text" name="name" placeholder="">
-    <input class="form__field" type="text" name="email" placeholder="">
-    <input class="form__field" type="text" name="phone" placeholder="">
-    <input class="form__field--checkbox" type="checkbox" name="agreement" placeholder="">
+  <input
+    class="form__field"
+    type="text"
+    name="name"
+    placeholder="Введи своє ім’я"
+  />
+  <input
+    class="form__field"
+    type="text"
+    name="email"
+    placeholder="Введи свій E-mail"
+  />
+  <input
+    class="form__field"
+    type="text"
+    name="phone"
+    placeholder="+380 95 -- -- ---"
+  />
+  <div class="form__checkbox-wrapper">
+    <label class="form__checkbox-label" for="form-agreement-checkbox">
+      <input
+        class="visually-hidden form__checkbox"
+        type="checkbox"
+        name="agreement"
+        id="form-agreement-checkbox"
+      />
+      <span class="form__checkmark">
+        <svg class="form__checkmark-icon">
+          <use href="/img/sprite.svg#icon-checkpoint"></use>
+        </svg>
+      </span>
+    </label>
+    <p class="form__checkbox-descr">
+      Згоден з
+      <a class="form__checkbox-link" href="#"> Політика конфеденційності </a>
+      та
+      <a class="form__checkbox-link" href="#"> Умови користування послугами </a>
+    </p>
+  </div>
 
-    <button class="form__submit-btn register-btn" type="submit">
-        Зареєструватися
-    </button>
+  <button class="form__submit-btn register-btn" type="submit">
+    Зареєструватися
+  </button>
 </form>
