@@ -144,8 +144,6 @@
   color: #010101;
   margin-bottom: 24px;
 }
-.main__sub-title-text {
-}
 .main__sub-title-icon {
   position: absolute;
   right: 12px;
@@ -190,13 +188,14 @@
 }
 .main__formula-4 {
   transform-origin: top right;
-  bottom: 19px;
+  bottom: calc(21px - 20px);
   right: calc(50% + (269px - 360px / 2));
 
   font-style: italic;
   font-weight: 500;
   color: var(--formula-light-color);
   transform: rotate(15deg);
+  z-index: 0;
 }
 .main__formula-5 {
   display: none;

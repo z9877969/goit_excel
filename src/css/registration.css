@@ -1,7 +1,33 @@
 .registration {
   padding: 32px 20px;
-
   background-color: var(--white-text-color);
-
   box-shadow: 0px 0px 20px rgba(15, 124, 65, 0.2);
+}
+.registration__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.registration__form-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__form-wrapper {
+    display: block;
+  }
+  .registration__btn {
+    display: none;
+  }
+  .registration__modal-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .registration {
+    padding: 52px;
+    background-color: var(--white-text-color);
+    box-shadow: 0px 0px 20px rgba(15, 124, 65, 0.2);
+  }
 }

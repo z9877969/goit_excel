@@ -63,3 +63,6 @@
 .form__checkbox-link {
   color: var(--policy-link-color);
 }
+.form__submit-btn {
+  margin-top: calc(32px - 20px);
+}
