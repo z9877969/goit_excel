@@ -1,1 +1,37 @@
-/* modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-text-color);
+  overflow-y: auto;
+}
+.modal__header {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__close-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__btn-icon {
+  width: 100%;
+  height: 100%;
+}
+.modal__content {
+  padding-top: 29px;
+  padding-bottom: 117px;
+}
+.modal__title-wrapper {
+  margin-bottom: 24px;
+}
+.modal__timer-wrapper {
+  margin-bottom: 24px;
+}

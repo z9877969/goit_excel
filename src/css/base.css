@@ -36,11 +36,21 @@ body {
   margin: 0;
 }
 
-main {
-  /* flex-grow: 1; */
-}
-
 button {
   border: none;
   padding: 0;
+}
+
+.js-is-modal-open.modal-wrapper {
+  display: block;
+}
+
+.modal-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-wrapper {
+    display: none;
+  }
 }

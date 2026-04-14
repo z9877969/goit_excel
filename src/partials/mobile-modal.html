@@ -1,18 +1,21 @@
 <section class="modal">
-    <div class="container">
-        <div class="modal__header">
-            <load src="./logo.html" />
-            <button class="modal__close-btn">
-                <svg class="modal__btn-icon">
-                    <use href="/img/sprite.svg#icon-cross"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="modal__timer-wrapper">
-            <load src="./timer.html" />
-        </div>
-        <div class="modal__form-wrapper">
-            <load src="./form.html" />
-        </div>
+  <div class="container modal__wrapper">
+    <div class="modal__header">
+      <load src="./logo.html" />
+      <button class="modal__close-btn">
+        <svg class="modal__btn-icon">
+          <use href="/img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
     </div>
+    <div class="modal__content">
+      <div class="modal__title-wrapper">
+        <load src="./registration-title.html" />
+      </div>
+      <div class="modal__timer-wrapper">
+        <load src="./timer.html" />
+      </div>
+      <load src="./form.html" />
+    </div>
+  </div>
 </section>
