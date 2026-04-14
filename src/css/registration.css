@@ -12,6 +12,14 @@
   display: none;
 }
 
+/* .js-is-modal-open */.registration__modal-wrapper {
+  display: block;
+}
+
+.registration__modal-wrapper {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .registration__form-wrapper {
     display: block;

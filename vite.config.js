@@ -8,7 +8,10 @@ import SortCss from 'postcss-sort-media-queries';
 function htmlInjectFixed() {
   const tagName = 'load';
   const sourceAttr = 'src';
-  const tagMatcher = new RegExp(`<${tagName}((?:\\s{1,}[a-z0-9_-]+="[^"]*")+)\\s*/>`, 'gsi');
+  const tagMatcher = new RegExp(
+    `<${tagName}((?:\\s{1,}[a-z0-9_-]+="[^"]*")+)\\s*/>`,
+    'gsi'
+  );
   const attrMatcher = /([a-z0-9_-]+)="([^"]*)"/g;
 
   async function renderSnippets(code, codePath, root) {
@@ -40,7 +43,7 @@ function htmlInjectFixed() {
 
       if (!filePath.endsWith('.html') && !filePath.endsWith('.htm')) {
         const indexFile = ['html', 'htm']
-          .map((ext) => path.join(filePath, `index.${ext}`))
+          .map(ext => path.join(filePath, `index.${ext}`))
           .find(fs.existsSync);
         if (indexFile) {
           filePath = indexFile;
@@ -69,7 +72,9 @@ function htmlInjectFixed() {
       order: 'pre',
       async handler(html, ctx) {
         const root = path.resolve(__dirname, 'src');
-        const codePath = normalizePath(path.relative(root, path.join(root, ctx.path)));
+        const codePath = normalizePath(
+          path.relative(root, path.join(root, ctx.path))
+        );
         return renderSnippets(html, codePath, root);
       },
     },
@@ -78,6 +83,10 @@ function htmlInjectFixed() {
 
 export default defineConfig(({ command }) => {
   return {
+    server: {
+      host: true, // дозволяє доступ за локальною IP-адресою
+      port: 5173, // можна вказати будь-який порт
+    },
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
