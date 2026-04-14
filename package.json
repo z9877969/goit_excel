@@ -1,11 +1,11 @@
 {
-  "name": "goit-excel",
+  "name": "goit_excel",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-excel/",
+    "build": "vite build --base=/goit_excel/",
     "preview": "vite preview"
   },
   "devDependencies": {
