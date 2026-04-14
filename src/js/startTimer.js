@@ -1,5 +1,5 @@
 import { pageTimer } from './timer';
 
-export const setsTimer = () => {
+export const setTimer = () => {
   pageTimer.start();
 };

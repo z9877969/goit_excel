@@ -58,6 +58,7 @@ export class Timer {
 
   stop() {
     clearInterval(this.intervalId);
+    this.intervalId = null;
   }
 }
 
