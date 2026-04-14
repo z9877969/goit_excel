@@ -1,20 +1,4 @@
 :root {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-
-  color: #010101;
-  background-color: #f1f1f1;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
   --main-green-color: #0f7c41;
   --main-page-bg: #f1f1f1;
   --main-text-color: #010101;
@@ -25,6 +9,32 @@
   --formula-normal-color: #97c3ab;
   --input--main-bg-color: #f2f4fa;
   --input--secondary-bg-color: #f5f5f5;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--main-text-color);
+  background-color: var(--main-page-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
 body {
