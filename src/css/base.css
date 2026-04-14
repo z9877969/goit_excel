@@ -43,7 +43,7 @@ button {
   cursor: pointer;
 }
 
-.js-is-modal-open.modal-wrapper {
+.modal-wrapper.is-open {
   display: block;
 }
 
@@ -52,7 +52,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .js-is-modal-open.modal-wrapper {
+  .modal-wrapper.is-open {
     display: none;
   }
 }
