@@ -9,7 +9,6 @@ const handleFormSubmit = async e => {
     alert('Реєстрація пройшла успішно');
     e.target.reset();
   } catch (error) {
-    console.log(error.message);
     alert('Сталась помилка - повторіть спробу пізніше');
   }
 };
