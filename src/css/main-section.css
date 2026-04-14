@@ -1,8 +1,49 @@
 .main {
+  position: relative;
+  overflow-x: hidden;
   padding-top: 20px;
   padding-bottom: 40px;
+  background-image:
+  /* squares */
+    url(/img/icons/green_square_icon.svg),
+    url(/img/icons/green_square_icon.svg),
+    url(/img/icons/green_square_icon.svg),
+    url(/img/icons/green_square_icon.svg),
+    -webkit-image-set(
+        url(/img/webp/main_bg_img_mob@1x.webp) 1x,
+        url(/img/webp/main_bg_img_mob@2x.webp) 2x
+      ),
+    linear-gradient(
+      to right,
+      #f1f1f1 calc(50% + (233px - 360px / 2)),
+      transparent calc(50% + (233px - 360px / 2))
+    ),
+    linear-gradient(to right, #e7e7e7 1.44px, transparent 1.44px),
+    linear-gradient(to bottom, #e7e7e7 1.44px, transparent 1.44px);
+  background-repeat:
+    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat,
+    repeat;
+  background-size:
+    6px 6px,
+    16px 16px,
+    6px 6px,
+    16px 16px,
+    168px 108px,
+    100% 100%,
+    101.32px 100%,
+    100% 37.44px;
+  background-position:
+    calc(50% + (307px - 360px / 2)) 235px,
+    left calc(50% + (348px - 360px / 2)) bottom 263px,
+    right calc(50% + (346px - 360px / 2)) bottom 120px,
+    right calc(50% + (244px - 360px / 2)) bottom 15px,
+    right bottom,
+    0 0,
+    35px 0,
+    0 -13px;
 }
 .header {
+  display: flex;
   margin-bottom: 16px;
 }
 .main__event-info {
@@ -88,7 +129,7 @@
   font-weight: 700;
 }
 .main-title {
-  width: 280px;
+  max-width: 280px;
   font-weight: 700;
   font-size: 32px;
   line-height: 1.25;
@@ -112,6 +153,53 @@
   width: 40px;
   height: 40px;
   fill: var(--main-green-color);
+}
+
+.main__formula {
+  position: absolute;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0em;
+  white-space: nowrap;
+  z-index: 0;
+}
+
+.main__formula-1 {
+  top: 15px;
+  left: calc(50% + (253px - 360px / 2));
+  color: var(--formula-normal-color);
+}
+.main__formula-2 {
+  transform-origin: top left;
+  top: 119px;
+  left: calc(50% + (265px - 360px / 2));
+  font-style: italic;
+  color: var(--formula-light-color);
+  transform: rotate(16.45deg);
+}
+.main__formula-3 {
+  transform-origin: top left;
+  top: 295px;
+  left: calc(50% + (258px - 360px / 2));
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--formula-light-color);
+  transform: rotate(-30deg);
+}
+.main__formula-4 {
+  transform-origin: top right;
+  bottom: 19px;
+  right: calc(50% + (269px - 360px / 2));
+
+  font-style: italic;
+  font-weight: 500;
+  color: var(--formula-light-color);
+  transform: rotate(15deg);
+}
+.main__formula-5 {
+  display: none;
 }
 
 @media screen and (min-width: 360px) {

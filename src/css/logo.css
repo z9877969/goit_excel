@@ -1,4 +1,5 @@
 .logo-icon {
+  display: inline-flex;
   width: 100px;
   height: 30px;
 
