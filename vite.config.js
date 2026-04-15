@@ -84,8 +84,8 @@ function htmlInjectFixed() {
 export default defineConfig(({ command }) => {
   return {
     server: {
-      host: true, // дозволяє доступ за локальною IP-адресою
-      port: 5173, // можна вказати будь-який порт
+      host: true,
+      port: 5173,
     },
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
@@ -125,5 +125,8 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
+    css: {
+      postcss: './postcss.config.js',
+    },
   };
 });
