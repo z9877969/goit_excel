@@ -30,6 +30,15 @@
   background-size: 24px 16px;
   background-position: 15px center;
 }
+.form__field:user-invalid {
+  outline: 2px solid red;
+}
+.form__field:user-valid {
+  outline: 2px solid green;
+}
+.form__checkbox:user-invalid + .form__checkmark {
+  border: 2px solid red;
+}
 .form__checkbox-wrapper {
   display: flex;
   column-gap: 8px;
